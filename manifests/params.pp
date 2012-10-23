@@ -10,4 +10,6 @@
 #
 # Sample Usage:
 #
-class kibana::params {}
+class kibana::params {
+  $elasticsearch_host = hiera('elasticsearch_host')
+}
